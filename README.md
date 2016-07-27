@@ -142,6 +142,20 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 >://mitulmodi.wordpress.com/2012/03/21/android-wifi-architecture-wext/
 
+## WiFi for IoT
+
+### Configure IoT WiFi
+
+**Smartconfig**
+
+![Config IoT WiFi thru Smartconfig](http://cdn.jxtobo.com/wp-content/uploads/2015/10/4ffce04d92a4d6cb21c1494cdfcd6dc1126.jpg)
+
+**AP Mode**
+
+![Config IoT WiFi thru AP](http://cdn.jxtobo.com/wp-content/uploads/2015/10/4ffce04d92a4d6cb21c1494cdfcd6dc1128.jpg)
+
+> http://www.jxtobo.com/4572.html
+
 ## Reference
 - http://standards.ieee.org/getieee802/download/802.11-2007.pdf
 - https://en.wikipedia.org/wiki/Wi-Fi
