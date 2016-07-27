@@ -88,13 +88,23 @@ Each BSS or ESS is identified by a **service set identifier (SSID)** - a series 
 
 ## Infrastructure
 
-![Network Infrastructure](http://www.crimewatchsecurity.com/image/101183000.jpg)
+**WLAN**
 
 ![WLAN Architecture](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/WI-FI_Range_Diagram.svg/2000px-WI-FI_Range_Diagram.svg.png)
+
+**Wireless Router**
+
+![Network Infrastructure](http://www.crimewatchsecurity.com/image/101183000.jpg)
+
+**Wireless Bridge**
 
 ![Wireless Bridge](http://cdn.makeuseof.com/wp-content/uploads/2008/11/wireless-bridge-diagram.png?b34c28)
 
 > http://www.home-network-help.com/wireless-bridge.html
+
+**Wireless Repeater**
+
+![Wireless Repeater](http://www.eusso.com/models/wireless/ugl2454-apa/wireless%20repeater.jpg)
 
 ## Standard Devices
 
