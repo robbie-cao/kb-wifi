@@ -26,5 +26,13 @@ A WAP is differentiated from a hotspot, which is the physical location where Wi-
 
 > https://en.wikipedia.org/wiki/Wireless_access_point
 
+**Router**
+
+A **router** is a networking device that forwards data packets between computer networks. Routers perform the "traffic directing" functions on the Internet. A data packet is typically forwarded from one router to another through the networks that constitute the internetwork until it reaches its destination node.[1]
+
+A router is connected to two or more data lines from different networks (as opposed to a network switch, which connects data lines from one single network). When a data packet comes in on one of the lines, the router reads the address information in the packet to determine its ultimate destination. Then, using information in its routing table or routing policy, it directs the packet to the next network on its journey. This creates an overlay internetwork.
+
+> https://en.wikipedia.org/wiki/Router_(computing)
+
 ## Reference
 - http://standards.ieee.org/getieee802/download/802.11-2007.pdf
