@@ -10,6 +10,12 @@ The Wi-Fi Alliance defines Wi-Fi as any "wireless local area network" (WLAN) pro
 
 > https://en.wikipedia.org/wiki/Wi-Fi
 
+**WLAN**
+
+A **Wireless Local Area Network (WLAN)** is a wireless computer network that links two or more devices using a wireless distribution method (often spread-spectrum or OFDM radio) within a limited area such as a home, school, computer laboratory, or office building. This gives users the ability to move around within a local coverage area and still be connected to the network, and can provide a connection to the wider Internet. Most modern WLANs are based on IEEE 802.11 standards, marketed under the Wi-Fi brand name.
+
+> https://en.wikipedia.org/wiki/Wireless_LAN
+
 **Station**
 
 In IEEE 802.11 (Wi-Fi) terminology, a **station (STA)** is a device that has the capability to use the 802.11 protocol.
@@ -45,6 +51,22 @@ A router is connected to two or more data lines from different networks (as oppo
 **Hotspot**
 
 A **hotspot** is a physical location where people may obtain Internet access, typically using Wi-Fi technology, via a wireless local area network (WLAN) using a router connected to an internet service provider.
+
+> https://en.wikipedia.org/wiki/Hotspot_(Wi-Fi)
+
+**BSS**
+
+The **Basic Service Set (BSS)** is a set of all stations that can communicate with each other at PHY layer. Every BSS has an identification (ID) called the BSSID, which is the MAC address of the access point servicing the BSS.
+
+The basic service set (BSS) provides the basic building-block of an 802.11 wireless LAN. In infrastructure mode, a single access point (AP) together with all associated stations (STAs) is called a BSS; not to be confused with the coverage of an access point, known as the basic service area (BSA). The access point acts as a master to control the stations within that BSS; the simplest BSS consists of one access point and one station.
+
+**ESS**
+
+An **Extended Service Set (ESS)** is a set of connected BSSs. Access points in an ESS are connected by a distribution system. Each ESS has an ID called the SSID which is a 32-byte (maximum) character string.
+
+![Wireless Lan Architecture](http://what-when-how.com/wp-content/uploads/2012/03/tmp15B103_thumb.jpg)
+
+> http://what-when-how.com/roaming-in-wireless-networks/wlan-overview-roamingcurrent-and-future-enhancements/
 
 ## Reference
 - http://standards.ieee.org/getieee802/download/802.11-2007.pdf
