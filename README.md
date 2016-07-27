@@ -146,7 +146,7 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 ### Linux Networking Stack
 
-![Linux Networking Stack](http://vichargrave.com/wp-content/uploads/2013/01/Network-Stack-Models1.png)
+![Linux Networking Stack](http://140.120.7.21/LinuxRef/IMG/ANS-figure2.gif)
 
 > http://140.120.7.21/LinuxRef/Network/LinuxNetworkStack.html
 
@@ -156,6 +156,19 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 ![Data Flow of Networking in Linux Kernel](http://image.slidesharecdn.com/linuxnetworkstack-140928020340-phpapp02/95/linux-network-stack-1-1024.jpg?cb=1411869839)
 
+### Linux WiFi Architecture
+
+![Realtek Linux WiFi Architecture](http://3.bp.blogspot.com/-e1LcVZ1CE0s/TxGnBSWMBXI/AAAAAAAAAGU/dalu2rx3OYw/s1600/WiFi+Direct.jpg)
+
+> http://dishingtech.blogspot.com/2012/01/realtek-wi-fi-direct-programming-guide.html
+
+![TI WL18xx Linux Wireless Architecture](http://processors.wiki.ti.com/images/f/fd/Wlcore.png)
+
+> http://processors.wiki.ti.com/index.php/WL18xx_Linux_Wireless_Architecture
+
+![Tizen Linux WiFi Architecture](https://wiki.tizen.org/w/images/thumb/1/16/Wlan.png/800px-Wlan.png)
+
+> https://wiki.tizen.org/wiki/Porting_Guide/Connectivity
 
 ### Android WiFI Architecture
 
