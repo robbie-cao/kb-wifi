@@ -144,11 +144,31 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 ## WiFi for IoT
 
+### Smart-Config
+
+TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technology, a one-step Wi-Fi setup process that allows multiple in-home devices to connect to Wi-Fi networks quickly and efficiently. Considering applications that typically do not have a display or keyboard to enter Wi-Fi network name and password, SmartConfig technology gives end users the ability to easily connect their CC3000-based devices to an access point. Through a simple SmartConfig technology interface, consumers can use an iOS or Android smartphone/tablet or home PC using just a simple Web browser. Software on this page gives access to the SmartConfig library and application source code in order to create your own application using TI's SmartConfig technology.
+
+![TI CC3000 Smart-Config](http://processors.wiki.ti.com/images/2/22/Cc3000_smart_config.PNG)
+
+> http://processors.wiki.ti.com/index.php/CC3000_Smart_Config
+
+> http://processors.wiki.ti.com/index.php/CC3000_First_Time_Configuration
+
+> http://electronics.stackexchange.com/questions/61704/how-does-ti-cc3000-wifi-smart-config-work
+
+> http://depletionregion.blogspot.com/2013/10/cc3000-smart-config-transmitting-ssid.html
+
+> http://depletionregion.blogspot.ch/2014/06/smart-config-for-consumer-products.html
+
+> http://www.tuicool.com/articles/E3a2myi
+
+> http://blog.csdn.net/xundh/article/details/50351888
+
 ### Configure IoT WiFi
 
-**Smartconfig**
+**Smart Config**
 
-![Config IoT WiFi thru Smartconfig](http://cdn.jxtobo.com/wp-content/uploads/2015/10/4ffce04d92a4d6cb21c1494cdfcd6dc1126.jpg)
+![Config IoT WiFi thru Smart Config](http://cdn.jxtobo.com/wp-content/uploads/2015/10/4ffce04d92a4d6cb21c1494cdfcd6dc1126.jpg)
 
 **AP Mode**
 
