@@ -86,7 +86,7 @@ Each BSS or ESS is identified by a **service set identifier (SSID)** - a series 
 
 > https://en.wikipedia.org/wiki/IEEE_802.11
 
-## Architecture
+## Infrastructure
 
 ## Standard Devices
 
@@ -115,6 +115,14 @@ Two wireless bridges may be used to connect two wired networks over a wireless l
 Wireless range-extenders or wireless repeaters can extend the range of an existing wireless network. Strategically placed range-extenders can elongate a signal area or allow for the signal area to reach around barriers such as those pertaining in L-shaped corridors.
 
 > https://en.wikipedia.org/wiki/Wi-Fi
+
+## Architecture
+
+### Android WiFI Architecture
+
+![Android WiFi Architecture](https://mitulmodi.files.wordpress.com/2012/03/android-wifi-arch-detail.jpg?w=459&h=425)
+
+>://mitulmodi.wordpress.com/2012/03/21/android-wifi-architecture-wext/
 
 ## Reference
 - http://standards.ieee.org/getieee802/download/802.11-2007.pdf
