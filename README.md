@@ -1,6 +1,6 @@
 # Learning WiFi
 
-## Terminology
+## Terminology and Concept
 
 **WiFi**
 
@@ -62,11 +62,23 @@ The basic service set (BSS) provides the basic building-block of an 802.11 wirel
 
 **ESS**
 
-An **Extended Service Set (ESS)** is a set of connected BSSs. Access points in an ESS are connected by a distribution system. Each ESS has an ID called the SSID which is a 32-byte (maximum) character string.
+An **Extended Service Set (ESS)** is a set of two or more interconnected wireless BSSs that share the same SSID (network name), security credentials and integrated (providing translation between 802.3 and 802.11 frames) wired local area networks that appear as a single BSS to the logical link control layer at any station associated with one of those BSSs which facilitates mobile IP and fast secure roaming applications; the BSSs may work on the same channel, or work on different channels to boost aggregate throughput.
+
+Access points in an ESS are connected by a distribution system. Each ESS has an ID called the SSID which is a 32-byte (maximum) character string.
 
 ![Wireless Lan Architecture](http://what-when-how.com/wp-content/uploads/2012/03/tmp15B103_thumb.jpg)
 
 > http://what-when-how.com/roaming-in-wireless-networks/wlan-overview-roamingcurrent-and-future-enhancements/
+
+**SSID**
+
+Each BSS or ESS is identified by a **service set identifier (SSID)** - a series of 0 to 32 octets. It is used as an identifier for a wireless LAN, and is intended to be unique for a particular area. Since this identifier must often be entered into devices manually by a human user, it is often a human-readable string and thus commonly called the "network name"
+
+**IEEE 802.11**
+
+**IEEE 802.11** is a set of media access control (MAC) and physical layer (PHY) specifications for implementing wireless local area network (WLAN) computer communication in the 900 MHz and 2.4, 3.6, 5, and 60 GHz frequency bands.
+
+> https://en.wikipedia.org/wiki/IEEE_802.11
 
 ## Reference
 - http://standards.ieee.org/getieee802/download/802.11-2007.pdf
