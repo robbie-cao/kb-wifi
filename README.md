@@ -48,6 +48,12 @@ A router is connected to two or more data lines from different networks (as oppo
 
 > https://en.wikipedia.org/wiki/Router_(computing)
 
+**Wireless Router**
+
+A **wireless router** is a device that performs the functions of a router and also includes the functions of a wireless access point. It is used to provide access to the Internet or a private computer network. It can function in a wired LAN (local area network), in a wireless-only LAN (WLAN), or in a mixed wired/wireless network, depending on the manufacturer and model.
+
+> https://en.wikipedia.org/wiki/Wireless_router
+
 **Hotspot**
 
 A **hotspot** is a physical location where people may obtain Internet access, typically using Wi-Fi technology, via a wireless local area network (WLAN) using a router connected to an internet service provider.
@@ -82,3 +88,4 @@ Each BSS or ESS is identified by a **service set identifier (SSID)** - a series 
 
 ## Reference
 - http://standards.ieee.org/getieee802/download/802.11-2007.pdf
+- https://en.wikipedia.org/wiki/Wi-Fi
