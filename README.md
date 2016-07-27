@@ -86,6 +86,36 @@ Each BSS or ESS is identified by a **service set identifier (SSID)** - a series 
 
 > https://en.wikipedia.org/wiki/IEEE_802.11
 
+## Architecture
+
+## Standard Devices
+
+### Wireless Access Point
+
+A wireless access point (WAP) connects a group of wireless devices to an adjacent wired LAN. An access point resembles a network hub, relaying data between connected wireless devices in addition to a (usually) single connected wired device, most often an Ethernet hub or switch, allowing wireless devices to communicate with other wired devices.
+
+### Wireless Adapter
+
+Wireless adapters allow devices to connect to a wireless network. These adapters connect to devices using various external or internal interconnects such as PCI, miniPCI, USB, ExpressCard, Cardbus and PC Card.
+
+### Wireless Router
+
+Wireless routers integrate a Wireless Access Point, Ethernet switch, and internal router firmware application that provides IP routing, NAT, and DNS forwarding through an integrated WAN-interface. A wireless router allows wired and wireless Ethernet LAN devices to connect to a (usually) single WAN device such as a cable modem or a DSL modem. A wireless router allows all three devices, mainly the access point and router, to be configured through one central utility.
+
+### Wireless Network Bridge
+
+Wireless network bridges connect a wired network to a wireless network.
+
+A bridge differs from an access point: an access point connects wireless devices to a wired network at the data-link layer.
+
+Two wireless bridges may be used to connect two wired networks over a wireless link, useful in situations where a wired connection may be unavailable, such as between two separate homes or for devices which do not have wireless networking capability (but have wired networking capability), such as consumer entertainment devices; alternatively, a wireless bridge can be used to enable a device which supports a wired connection to operate at a wireless networking standard which is faster than supported by the wireless network connectivity feature (external dongle or inbuilt) supported by the device (e.g. enabling Wireless-N speeds (up to the maximum supported speed on the wired Ethernet port on both the bridge and connected devices including the wireless access point) for a device which only supports Wireless-G). A dual-band wireless bridge can also be used to enable 5 GHz wireless network operation on a device which only supports 2.4 GHz wireless networking functionality and has a wired Ethernet port.
+
+### Wireless Repeater
+
+Wireless range-extenders or wireless repeaters can extend the range of an existing wireless network. Strategically placed range-extenders can elongate a signal area or allow for the signal area to reach around barriers such as those pertaining in L-shaped corridors.
+
+> https://en.wikipedia.org/wiki/Wi-Fi
+
 ## Reference
 - http://standards.ieee.org/getieee802/download/802.11-2007.pdf
 - https://en.wikipedia.org/wiki/Wi-Fi
