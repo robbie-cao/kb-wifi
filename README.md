@@ -134,7 +134,28 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 > https://en.wikipedia.org/wiki/Wi-Fi
 
-## Architecture
+## Protocol and Architecture
+
+### General
+
+![Network Model](http://vichargrave.com/wp-content/uploads/2013/01/Network-Stack-Models1.png)
+
+![Network Protocols](http://heylinux.com/wp-content/uploads/2015/08/TCP-IP.gif)
+
+> http://www.colasoft.com.cn/download/protocols_map.php
+
+### Linux Networking Stack
+
+![Linux Networking Stack](http://vichargrave.com/wp-content/uploads/2013/01/Network-Stack-Models1.png)
+
+> http://140.120.7.21/LinuxRef/Network/LinuxNetworkStack.html
+
+![Networking in Linux Kernel](http://upload.wikimedia.org/wikipedia/commons/5/5b/Linux_kernel_map.png)
+
+> http://blog.erratasec.com/2013/02/custom-stack-it-goes-to-11.html#.V5itaGXXFZ0
+
+![Data Flow of Networking in Linux Kernel](http://image.slidesharecdn.com/linuxnetworkstack-140928020340-phpapp02/95/linux-network-stack-1-1024.jpg?cb=1411869839)
+
 
 ### Android WiFI Architecture
 
@@ -181,5 +202,6 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 > http://www.jxtobo.com/4572.html
 
 ## Reference
-- http://standards.ieee.org/getieee802/download/802.11-2007.pdf
 - https://en.wikipedia.org/wiki/Wi-Fi
+- http://standards.ieee.org/getieee802/download/802.11-2007.pdf
+- http://www.slideshare.net/hugolu/the-linux-networking-architecture
