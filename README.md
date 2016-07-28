@@ -318,6 +318,8 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
   wpa_supplicant - Wi-Fi Protected Access client and IEEE 802.1X supplicant
   hostapd - IEEE 802.11 AP, IEEE 802.1X/WPA/WPA2/EAP/RADIUS Authenticator
+  hostapd_cli - hostapd command-line interface
+
   # wpa_supplicant and hostapd come as a pair of complementary client and
   # host for wireless access points.
   # hostapd allows us to create access points from the command line, which
@@ -492,11 +494,15 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 
 > http://askubuntu.com/questions/138472/how-do-i-connect-to-a-wpa-wifi-network-using-the-command-line
 
+> http://sirlagz.net/2012/08/27/how-to-use-wpa_cli-to-connect-to-a-wireless-network/
+
+> http://sirlagz.net/2012/08/27/how-to-use-wpa_cli-to-connect-to-a-wireless-network/
+
 > http://linux.icydog.net/wpa.php
 
 ### WPA in Command Line
 
-**wpa_cli**
+#### `wpa_cli`
 
   ```
   wpa_cli [ -p path to ctrl sockets ] [ -i ifname ] [ -hvB ] [ -a action file ] [ -P pid file ] [ command ... ]
@@ -504,9 +510,13 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 
 `wpa_cli` is a text-based frontend program for interacting with `wpa_supplicant`. It is used to query current status, change configuration, trigger events, and request interactive user input.
 
+**Examples**
+
+> https://gist.github.com/buhman/7162560
+
 > http://linux.die.net/man/8/wpa_cli
 
-**wpa_supplicant**
+#### `wpa_supplicant`
 
   ```
   wpa_supplicant [ -BddfhKLqqtuvW ] [ -iifname ] [ -cconfig file ] [ -Ddriver ] [ -PPID_file ] [ -foutput file ]
@@ -518,7 +528,56 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 
 Before `wpa_supplicant` can do its work, the network interface must be available. That means that the physical device must be present and enabled, and the driver for the device must be loaded. The daemon will exit immediately if the device is not already available.
 
+
+**Examples**
+
+In most common cases, wpa_supplicant is started with:
+
+  ```
+  wpa_supplicant -B -c/etc/wpa_supplicant.conf -iwlan0
+  ```
+
+This makes the process fork into background.
+
+The easiest way to debug problems, and to get debug log for bug reports, is to start wpa_supplicant on foreground with debugging enabled:
+
+  ```
+  wpa_supplicant -c/etc/wpa_supplicant.conf -iwlan0 -d
+  ```
+
+If the specific driver wrapper is not known beforehand, it is possible to specify multiple comma separated driver wrappers on the command line. wpa_supplicant will use the first driver wrapper that is able to initialize the interface.
+
+  ```
+  wpa_supplicant -Dnl80211,wext -c/etc/wpa_supplicant.conf -iwlan0
+  ```
+
+`wpa_supplicant` can control multiple interfaces (radios) either by running one process for each interface separately or by running just one process and list of options at command line. Each interface is separated with -N argument. As an example, following command would start wpa_supplicant for two interfaces:
+
+  ```
+  wpa_supplicant \
+      -c wpa1.conf -i wlan0 -D hostap -N \
+      -c wpa2.conf -i ath0 -D madwifi
+  ```
+
 > http://linux.die.net/man/8/wpa_supplicant
+
+> https://wiki.archlinux.org/index.php/WPA_supplicant
+
+> https://ubuntuforums.org/showthread.php?t=263136
+
+#### `hostapd`, `hostapd_cli`
+
+`hostapd` is a user space daemon for access point and authentication servers. It implements IEEE 802.11 access point management, IEEE 802.1X/WPA/WPA2/EAP Authenticators, RADIUS client, EAP server, and RADIUS authentication server. The current version supports Linux (Host AP, madwifi, mac80211-based drivers) and FreeBSD (net80211).
+
+`hostapd` is designed to be a "daemon" program that runs in the background and acts as the backend component controlling authentication. `hostapd` supports separate frontend programs and an example text-based frontend, `hostapd_cli`, is included with `hostapd`.
+
+> https://w1.fi/hostapd/
+
+> https://wireless.wiki.kernel.org/en/users/documentation/hostapd
+
+> https://wiki.gentoo.org/wiki/Hostapd
+
+> https://wiki.archlinux.org/index.php/software_access_point
 
 ## Reference
 
