@@ -214,6 +214,21 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 
 > http://www.jxtobo.com/4572.html
 
+## Misc
+
+### Linux WiFi Kernel Stack High Level Description
+
+1. It's important to understand there are 2 paths in which userspace communicates with the kernel when we're talking about WiFi:
+   - **Data path**: the data being received is passed from the wireless driver to the netdev core (usually using `netif_rx()`). From there the net core will pass it through the TCP/IP stack code and will queue it on the relevant sockets from which the userspace process will read it. On the Tx path packets will be sent from the netdev core to the wireless driver using the `ndo_start_xmit()` callback. The driver registers (like other netdevices such as an ethernet driver) a set of operations callbacks by using the `struct net_device_ops`.
+   - **Control path**: this path is how userspace controls the WiFi interface/device and performs operations like **scan / authentication / association**. The userspace interface is based on netlink and called `nl80211` (see `include/uapi/linux/nl80211.h`). You can *send commands and get events in response*.
+2. When you send an `nl80211` command it gets initially handled by `cfg80211` kernel module (it's code is under `net/wireless` and the handlers are in `net/wireless/nl80211.c`). `cfg80211` will usually call a lower level driver. In case of **Full MAC hardware** the specific HW driver is right below `cfg80211`. The driver below `cfg80211` registers a set of ops with `cfg80211` by using `cfg80211_ops struct`. For example see brcmfmac driver (`drivers/net/wireless/brcm80211/brcmfmac/wl_cfg80211.c`).
+3. For **Soft MAC hardware** there's `mac80211` which is a kernel module implementing the 802.11 MAC layer. In this case `cfg80211` will talk to `mac80211` which will in turn use the hardware specific lower level driver. An example of this is iwlwifi (For Intel chips).
+4. `mac80211` registers itself with `cfg80211` by using the `cfg80211_ops` (see `net/mac80211/cfg.c`). The specific HW driver registers itself with `mac80211` by using the `ieee80211_ops struct` (for example `drivers/net/wireless/iwlwifi/mvm/mac80211.c`).
+5. Initialization of a new NIC you've connected occurs from the bottom up the stack. The HW specific driver will call mac80211's `ieee80211_allow_hw()` usually after probing the HW. `ieee80211_alloc_hw()` gets the size of private data struct used by the HW driver. It in turns calls `cfg80211` `wiphy_new()` which does the actual allocation of space sufficient for the wiphy struct, the `ieee80211_local struct` (which is used by `mac80211`) and the HW driver private data (the layering is seen in `ieee80211_alloc_hw` code).  `ieee80211_hw` is an embedded struct within `ieee80211_local` which is "visible" to the the HW driver. All of these (`wiphy`, `ieee80211_local`, `ieee80211_hw`) represent a single physical device connected.
+6. On top of a single physical device (also referred to as phy) you can set up multiple virtual interfaces. These are essentially what you know as wlan0 or wlan1 which you control with `ifconfig`. Each such virtual interface is represented by an `ieee80211_vif`. This struct also contains at the end private structs accessed by the HW driver. Multiple interfaces can be used to run something like a station on wlan0 and an AP on wlan1 (this is possible depending on the HW capabilities).
+
+> http://stackoverflow.com/questions/7157181/how-to-learn-the-structure-of-wireless-drivers-mac80211
+
 ## Reference
 - https://en.wikipedia.org/wiki/Wi-Fi
 - http://standards.ieee.org/getieee802/download/802.11-2007.pdf
