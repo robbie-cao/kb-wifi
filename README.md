@@ -239,6 +239,12 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 ![Linkx Kernel WiFi mac80211 Architecture](http://kcchao.wikidot.com/local--files/cfg80211-nl80211/mac80211_Architecture.jpg)
 
+![Linux Kernel WiFi Arch New](http://www.crifan.com/files/doc/docbook/linux_wireless/release/htmls/images/new_linux_network_arch.jpg)
+
+![Linux Kernel WiFi Arch Planned](http://www.crifan.com/files/doc/docbook/linux_wireless/release/htmls/images/planned_linux_network_arch.jpg)
+
+> http://www.crifan.com/files/doc/docbook/linux_wireless/release/htmls/ch05_linux_wireless_lan_80211.html
+
 ![nl80211 and cfg80211](http://i.stack.imgur.com/TNLK1.png)
 
 > http://stackoverflow.com/questions/21456235/how-nl80211-library-cfg80211-work
