@@ -86,6 +86,46 @@ Each BSS or ESS is identified by a **service set identifier (SSID)** - a series 
 
 > https://en.wikipedia.org/wiki/IEEE_802.11
 
+## Wireless Interface Operating Mode
+
+A wireless interface always operates in one of the following operating modes. The mode sets the main functionality of the wireless link.
+- Access Point (AP) infrastructure mode
+- Station infrastructure mode
+- Monitor mode
+- Ad-Hoc (IBSS) mode
+- Wireless Distribution System (WDS)
+- Mesh
+
+### Access Point (AP) infrastructure mode
+
+An Access Point acts as the Master device in a managed wireless network. It holds the network together by managing and maintaining lists of associated Stations. It also manages security policies. The network is named after the MAC-Address (BSSID) of the AP. The human readable name for the network, the SSID, is also set by the AP.
+
+### Station infrastructure mode
+
+The Station device connects to an access point by sending certain management packets to it. This process is called the authentication and association. After the AP sent the successful association reply, the station is part of the network.
+
+### Monitor mode
+
+Monitor mode is a passive-only mode, no packets are transmitted. All incoming packets are handed over to the host computer completely unfiltered. This mode is useful to see what's going on on the network.
+
+With mac80211, it is possible to have a network device in monitor mode in addition to a regular device, this is useful to observe the network whilst using it. However, not all hardware fully supports this as not all hardware can be configured to show all packets while in one of the other operating modes, monitor mode interfaces always work on a “best effort” basis.
+
+With mac80211, it's also possible to transmit packets in monitor mode, which is known as packet injection. This is useful for applications that wish to implement MLME work in userspace, for example to support nonstandard MAC extensions of IEEE 802.11.
+
+### Ad-Hoc (IBSS) mode
+
+The Ad-Hoc mode is used to create a wireless network without the need of having a Master Access Point in the network. Each station in an IBSS network is managing the network itself. Ad-Hoc is useful for connecting two or more computers to each other when no (useful) AP is around for this purpose.
+
+### Wireless Distribution System (WDS)
+
+The Distribution System is the wired uplink connection to an AP. The Wireless Distribution System is the wireless equivalent to it. WDS serves as a wireless communication path between cooperating APs (usually in a single ESS), it can be used instead of cabling.
+
+### Mesh
+
+Mesh interfaces are used to allow multiple devices to communication with each other by establishing intelligent routes between each other dynamically.
+
+> https://wireless.wiki.kernel.org/en/users/Documentation/modes
+
 ## Infrastructure
 
 **WLAN**
@@ -249,4 +289,7 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 - http://www.slideshare.net/hugolu/the-linux-networking-architecture
 - https://wireless.wiki.kernel.org/welcome
 - http://linuxwireless.org/attachments/en/developers/Documentation/overview.pdf
+- https://wireless.wiki.kernel.org/_media/en/developers/documentation/mac80211.pdf
+- http://disi.unitn.it/locigno/didattica/NC/10-11/Slides_Seminar_Gringoli.pdf
 - [Inside the Atheros WiFi Chipset - Adrian Chadd](https://www.youtube.com/watch?v=WOcYTqoSQ68)
+- http://2010.rmll.info/IMG/pdf/kernel-device-drivers-rmll2010.pdf
