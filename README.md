@@ -332,13 +332,13 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 ## Configuration
 
-### Interface
+### Linux Network Interface
 
   ```
   $ tree /sys/class/net
   /sys/class/net
-  ├── eth0 -> ../../devices/pci0000:00/0000:00:03.0/net/eth0
-  └── lo -> ../../devices/virtual/net/lo
+  |-- eth0 -> ../../devices/pci0000:00/0000:00:03.0/net/eth0
+  +-- lo -> ../../devices/virtual/net/lo
 
   $ ls -l /sys/class/net/eth0/
   total 0
@@ -377,7 +377,7 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 > https://wiki.archlinux.org/index.php/Network_configuration
 
-### Config Files
+### Linux Network Config Files
   ```
   /etc/network/interfaces
   /etc/networks
@@ -399,6 +399,46 @@ network.
 
 `/etc/networks` is a plain ASCII file that describes known DARPA
 networks and symbolic names for these networks.
+
+### Android WiFi Config Files
+
+  ```
+  /system/etc/wifi/wpa_supplicant.conf
+  /data/misc/wifi/wpa_supplicant.conf
+  /data/data/com.android.providers.settings/databases/settings.db
+  ```
+
+  ```
+  # Start wpa_supplicant
+
+  # Android socket
+  service wpa_supplicant /system/bin/wpa_supplicant \
+        -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf \
+        -e/data/misc/wifi/entropy.bin -ddd
+        class main
+        socket wpa_wlan0 dgram 660 wifi wifi # <- With this line you specify that is an Android socket, note the keyword "socket"
+        disabled
+        oneshot
+
+  # Unix socket
+  service wpa_supplicant /system/bin/wpa_supplicant \
+        -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf \
+        disabled
+        oneshot
+  ```
+
+> http://forum.xda-developers.com/showthread.php?t=2547690
+
+  ```
+  # Regist hostap
+
+  service hostapd_bin /system/bin/hostapd -d /data/misc/wifi/hostapd.conf
+        socket wpa_wlan0 dgram 660 wifi wifi
+        disabled
+        oneshot
+  ```
+
+> http://processors.wiki.ti.com/index.php/TI-Android-JB-PortingGuide#WLAN
 
 ### Reference
 
