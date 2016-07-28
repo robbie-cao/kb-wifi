@@ -239,6 +239,10 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 
 > http://stackoverflow.com/questions/21456235/how-nl80211-library-cfg80211-work
 
+![Linux WLAN Architecture Detailed](http://1.bp.blogspot.com/-u0yLYDYy__s/UPaQVwvzl9I/AAAAAAAAEiU/nFyCdi063Bk/s1600/LInux_WLAN_Framework_V_1_0.jpg)
+
+> http://wire-less-comm.blogspot.com/2013/01/wireless-lan-and-linux-together.html
+
 ## Reference
 - https://en.wikipedia.org/wiki/Wi-Fi
 - http://standards.ieee.org/getieee802/download/802.11-2007.pdf
