@@ -332,6 +332,34 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 ## Configuration
 
+> https://help.ubuntu.com/12.04/serverguide/network-configuration.html
+
+> https://wiki.debian.org/NetworkConfiguration
+
+> https://wiki.archlinux.org/index.php/Network_configuration
+
+  ```
+  /etc/network/interfaces
+  /etc/networks
+  /etc/protocols
+  /etc/services
+  /etc/host.conf
+  /etc/hostname
+  /etc/hosts
+  /etc/hosts.allow
+  /etc/hosts.den
+  /etc/resolv.conf
+  ```
+
+`/etc/network/interfaces` contains network interface configuration
+information for the `ifup` and `ifdown` commands.
+
+This is where you configure how your system is connected to the
+network.
+
+`/etc/networks` is a plain ASCII file that describes known DARPA
+networks and symbolic names for these networks.
+
 ## WiFi for IoT
 
 ### Smart-Config
