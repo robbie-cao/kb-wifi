@@ -233,21 +233,33 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 > http://stackoverflow.com/questions/7157181/how-to-learn-the-structure-of-wireless-drivers-mac80211
 
+**Linux Wireless Networking Architecutre Overview**
+
 ![Linux WiFi Kernel Stack Path](https://www.linux.com/sites/lcom/files/joomla/images/stories/64686/arch.jpg)
 
 > https://www.linux.com/blog/linux-wireless-networking-short-walk
 
+**Linux Wireless Networking Architecture - Old**
+
 ![Linkx Kernel WiFi mac80211 Architecture](http://kcchao.wikidot.com/local--files/cfg80211-nl80211/mac80211_Architecture.jpg)
 
+**Linux Wireless Networking Architecture - Current**
+
 ![Linux Kernel WiFi Arch New](http://www.crifan.com/files/doc/docbook/linux_wireless/release/htmls/images/new_linux_network_arch.jpg)
+
+**Linux Wireless Networking Architecture - Planned**
 
 ![Linux Kernel WiFi Arch Planned](http://www.crifan.com/files/doc/docbook/linux_wireless/release/htmls/images/planned_linux_network_arch.jpg)
 
 > http://www.crifan.com/files/doc/docbook/linux_wireless/release/htmls/ch05_linux_wireless_lan_80211.html
 
+**`nl80211` and `cfg80211`**
+
 ![nl80211 and cfg80211](http://i.stack.imgur.com/TNLK1.png)
 
 > http://stackoverflow.com/questions/21456235/how-nl80211-library-cfg80211-work
+
+**More Details**
 
 ![Linux WLAN Architecture Detailed](http://1.bp.blogspot.com/-u0yLYDYy__s/UPaQVwvzl9I/AAAAAAAAEiU/nFyCdi063Bk/s1600/LInux_WLAN_Framework_V_1_0.jpg)
 
