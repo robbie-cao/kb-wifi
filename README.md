@@ -227,9 +227,22 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 5. Initialization of a new NIC you've connected occurs from the bottom up the stack. The HW specific driver will call mac80211's `ieee80211_allow_hw()` usually after probing the HW. `ieee80211_alloc_hw()` gets the size of private data struct used by the HW driver. It in turns calls `cfg80211` `wiphy_new()` which does the actual allocation of space sufficient for the wiphy struct, the `ieee80211_local struct` (which is used by `mac80211`) and the HW driver private data (the layering is seen in `ieee80211_alloc_hw` code).  `ieee80211_hw` is an embedded struct within `ieee80211_local` which is "visible" to the the HW driver. All of these (`wiphy`, `ieee80211_local`, `ieee80211_hw`) represent a single physical device connected.
 6. On top of a single physical device (also referred to as phy) you can set up multiple virtual interfaces. These are essentially what you know as wlan0 or wlan1 which you control with `ifconfig`. Each such virtual interface is represented by an `ieee80211_vif`. This struct also contains at the end private structs accessed by the HW driver. Multiple interfaces can be used to run something like a station on wlan0 and an AP on wlan1 (this is possible depending on the HW capabilities).
 
+![Linux WiFi Kernel Stack Path](https://www.linux.com/sites/lcom/files/joomla/images/stories/64686/arch.jpg)
+
+![Linkx Kernel WiFi mac80211 Architecture](http://kcchao.wikidot.com/local--files/cfg80211-nl80211/mac80211_Architecture.jpg)
+
 > http://stackoverflow.com/questions/7157181/how-to-learn-the-structure-of-wireless-drivers-mac80211
+
+> https://www.linux.com/blog/linux-wireless-networking-short-walk
+
+![nl80211 and cfg80211](http://i.stack.imgur.com/TNLK1.png)
+
+> http://stackoverflow.com/questions/21456235/how-nl80211-library-cfg80211-work
 
 ## Reference
 - https://en.wikipedia.org/wiki/Wi-Fi
 - http://standards.ieee.org/getieee802/download/802.11-2007.pdf
 - http://www.slideshare.net/hugolu/the-linux-networking-architecture
+- https://wireless.wiki.kernel.org/welcome
+- http://linuxwireless.org/attachments/en/developers/Documentation/overview.pdf
+- [Inside the Atheros WiFi Chipset - Adrian Chadd](https://www.youtube.com/watch?v=WOcYTqoSQ68)
