@@ -253,6 +253,12 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 > http://wire-less-comm.blogspot.com/2013/01/wireless-lan-and-linux-together.html
 
+### Inside Linux Kernel WiFi Source
+
+> https://kernelnewbies.org/Documents/Kernel-Docbooks?action=AttachFile&do=get&target=mac80211_2.6.29.pdf
+
+> http://www.campsmur.cat/files/mac80211_intro.pdf
+
 ### Android WiFI Architecture
 
 ![Android WiFi Architecture](https://mitulmodi.files.wordpress.com/2012/03/android-wifi-arch-detail.jpg?w=459&h=425)
