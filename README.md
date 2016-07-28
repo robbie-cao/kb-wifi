@@ -488,7 +488,40 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 
 ## Misc
 
+### Connect WiFi in Command Line
+
+> http://askubuntu.com/questions/138472/how-do-i-connect-to-a-wpa-wifi-network-using-the-command-line
+
+> http://linux.icydog.net/wpa.php
+
+### WPA in Command Line
+
+**wpa_cli**
+
+  ```
+  wpa_cli [ -p path to ctrl sockets ] [ -i ifname ] [ -hvB ] [ -a action file ] [ -P pid file ] [ command ... ]
+  ```
+
+`wpa_cli` is a text-based frontend program for interacting with `wpa_supplicant`. It is used to query current status, change configuration, trigger events, and request interactive user input.
+
+> http://linux.die.net/man/8/wpa_cli
+
+**wpa_supplicant**
+
+  ```
+  wpa_supplicant [ -BddfhKLqqtuvW ] [ -iifname ] [ -cconfig file ] [ -Ddriver ] [ -PPID_file ] [ -foutput file ]
+  ```
+
+**`wpa_supplicant`** is an implementation of the WPA Supplicant component, i.e., the part that runs in the client stations. It implements WPA key negotiation with a WPA Authenticator and EAP authentication with Authentication Server. In addition, it controls the roaming and IEEE 802.11 authentication/association of the wireless LAN driver.
+
+**`wpa_supplicant`** is designed to be a "daemon" program that runs in the background and acts as the backend component controlling the wireless connection. `wpa_supplicant` supports separate frontend programs and an example text-based frontend, `wpa_cli`, is included with `wpa_supplicant`.
+
+Before `wpa_supplicant` can do its work, the network interface must be available. That means that the physical device must be present and enabled, and the driver for the device must be loaded. The daemon will exit immediately if the device is not already available.
+
+> http://linux.die.net/man/8/wpa_supplicant
+
 ## Reference
+
 - https://en.wikipedia.org/wiki/Wi-Fi
 - http://standards.ieee.org/getieee802/download/802.11-2007.pdf
 - http://www.slideshare.net/hugolu/the-linux-networking-architecture
