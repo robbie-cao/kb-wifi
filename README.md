@@ -332,12 +332,52 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 ## Configuration
 
-> https://help.ubuntu.com/12.04/serverguide/network-configuration.html
+### Interface
 
-> https://wiki.debian.org/NetworkConfiguration
+  ```
+  $ tree /sys/class/net
+  /sys/class/net
+  ├── eth0 -> ../../devices/pci0000:00/0000:00:03.0/net/eth0
+  └── lo -> ../../devices/virtual/net/lo
+
+  $ ls -l /sys/class/net/eth0/
+  total 0
+  -r--r--r-- 1 root root 4096  7月 25 18:40 addr_assign_type
+  -r--r--r-- 1 root root 4096  7月 25 18:40 address
+  -r--r--r-- 1 root root 4096  7月 28 14:48 addr_len
+  -r--r--r-- 1 root root 4096  7月 28 14:48 broadcast
+  -rw-r--r-- 1 root root 4096  7月 28 14:48 carrier
+  -r--r--r-- 1 root root 4096  7月 28 14:48 carrier_changes
+  lrwxrwxrwx 1 root root    0  7月 25 18:40 device -> ../../../0000:00:03.0
+  -r--r--r-- 1 root root 4096  7月 25 18:40 dev_id
+  -r--r--r-- 1 root root 4096  7月 28 14:48 dev_port
+  -r--r--r-- 1 root root 4096  7月 28 14:48 dormant
+  -r--r--r-- 1 root root 4096  7月 28 14:48 duplex
+  -rw-r--r-- 1 root root 4096  7月 28 14:48 flags
+  -rw-r--r-- 1 root root 4096  7月 28 14:48 gro_flush_timeout
+  -rw-r--r-- 1 root root 4096  7月 28 14:48 ifalias
+  -r--r--r-- 1 root root 4096  7月 25 18:40 ifindex
+  -r--r--r-- 1 root root 4096  7月 25 18:40 iflink
+  -r--r--r-- 1 root root 4096  7月 28 14:48 link_mode
+  -rw-r--r-- 1 root root 4096  7月 28 14:48 mtu
+  -r--r--r-- 1 root root 4096  7月 28 14:48 name_assign_type
+  -rw-r--r-- 1 root root 4096  7月 28 14:48 netdev_group
+  -r--r--r-- 1 root root 4096  7月 28 14:48 operstate
+  -r--r--r-- 1 root root 4096  7月 28 14:48 phys_port_id
+  -r--r--r-- 1 root root 4096  7月 28 14:48 phys_switch_id
+  drwxr-xr-x 2 root root    0  7月 28 14:48 power
+  drwxr-xr-x 4 root root    0  7月 25 18:40 queues
+  -r--r--r-- 1 root root 4096  7月 28 14:48 speed
+  drwxr-xr-x 2 root root    0  7月 28 14:48 statistics
+  lrwxrwxrwx 1 root root    0  7月 25 18:40 subsystem -> ../../../../../class/net
+  -rw-r--r-- 1 root root 4096  7月 28 14:48 tx_queue_len
+  -r--r--r-- 1 root root 4096  7月 25 18:40 type
+  -rw-r--r-- 1 root root 4096  7月 25 18:40 uevent
+  ```
 
 > https://wiki.archlinux.org/index.php/Network_configuration
 
+### Config Files
   ```
   /etc/network/interfaces
   /etc/networks
@@ -359,6 +399,14 @@ network.
 
 `/etc/networks` is a plain ASCII file that describes known DARPA
 networks and symbolic names for these networks.
+
+### Reference
+
+> https://help.ubuntu.com/12.04/serverguide/network-configuration.html
+
+> https://wiki.debian.org/NetworkConfiguration
+
+> https://wiki.archlinux.org/index.php/Network_configuration
 
 ## WiFi for IoT
 
