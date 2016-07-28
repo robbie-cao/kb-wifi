@@ -86,7 +86,7 @@ Each BSS or ESS is identified by a **service set identifier (SSID)** - a series 
 
 > https://en.wikipedia.org/wiki/IEEE_802.11
 
-## Wireless Interface Operating Mode
+## Mode of Operation
 
 The IEEE 802.11 has two basic modes of operation: **infrastructure mode** and **ad hoc mode**.
 - **Infrastructure mode**, in which wireless clients are connected to an access point. This is generally the default mode for 802.11b cards.
@@ -253,6 +253,20 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 >://mitulmodi.wordpress.com/2012/03/21/android-wifi-architecture-wext/
 
+## Utilities
+
+> http://archive.oreilly.com/linux/cmd/
+
+> http://cb.vu/unixtoolbox.xhtml
+
+> http://www.digilife.be/quickreferences/QRC/LINUX%20Admin%20Quick%20Reference.pdf
+
+### Network Utilities
+
+### WiFi Utilities
+
+## Configuration
+
 ## WiFi for IoT
 
 ### Smart-Config
@@ -303,3 +317,4 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 - http://disi.unitn.it/locigno/didattica/NC/10-11/Slides_Seminar_Gringoli.pdf
 - [Inside the Atheros WiFi Chipset - Adrian Chadd](https://www.youtube.com/watch?v=WOcYTqoSQ68)
 - http://2010.rmll.info/IMG/pdf/kernel-device-drivers-rmll2010.pdf
+- https://www.scribd.com/doc/152763476/Linux-Wifi-Developer-Guide-1
