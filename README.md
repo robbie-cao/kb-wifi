@@ -88,6 +88,14 @@ Each BSS or ESS is identified by a **service set identifier (SSID)** - a series 
 
 ## Wireless Interface Operating Mode
 
+The IEEE 802.11 has two basic modes of operation: **infrastructure mode** and **ad hoc mode**.
+- **Infrastructure mode**, in which wireless clients are connected to an access point. This is generally the default mode for 802.11b cards.
+- **Ad hoc mode**, in which clients are connected to one another without any access point.
+
+> https://en.wikipedia.org/wiki/Wireless_LAN#Types_of_wireless_LANs
+
+> http://ccm.net/contents/804-wifi-modes-of-operation-802-11-or-wi-fi
+
 A wireless interface always operates in one of the following operating modes. The mode sets the main functionality of the wireless link.
 - Access Point (AP) infrastructure mode
 - Station infrastructure mode
@@ -125,6 +133,8 @@ The Distribution System is the wired uplink connection to an AP. The Wireless Di
 Mesh interfaces are used to allow multiple devices to communication with each other by establishing intelligent routes between each other dynamically.
 
 > https://wireless.wiki.kernel.org/en/users/Documentation/modes
+
+> http://ccm.net/contents/804-wifi-modes-of-operation-802-11-or-wi-fi
 
 ## Infrastructure
 
