@@ -553,6 +553,8 @@ If the specific driver wrapper is not known beforehand, it is possible to specif
 
 ### Linux Network Interface
 
+#### `/sys/class/net/...`
+
   ```
   $ tree /sys/class/net
   /sys/class/net
@@ -595,6 +597,45 @@ If the specific driver wrapper is not known beforehand, it is possible to specif
   ```
 
 > https://wiki.archlinux.org/index.php/Network_configuration
+
+#### `/proc/net/...`
+
+This directory provides a comprehensive look at various networking parameters and statistics.
+Each directory and virtual file within this directory describes aspects of the system's network configuration.
+
+Below is a partial list of the `/proc/net/` directory:
+
+- **arp** - Lists the kernel's ARP table.
+
+  This file is particularly useful for connecting a hardware address to an IP address on a system.
+
+- **atm/** — The files within this directory contain Asynchronous Transfer Mode (ATM) settings and statistics.
+
+  This directory is primarily used with ATM networking and ADSL cards.
+
+- **dev** - Lists the various network devices configured on the system, complete with transmit and receive statistics.
+
+  This file displays the number of bytes each interface has sent and received, the number of packets inbound and outbound, the number of errors seen, the number of packets dropped, and more.
+
+- **dev_mcast** - Lists Layer2 multicast groups on which each device is listening.
+- **igmp** - Lists the IP multicast addresses which this system joined.
+- **ip_conntrack** - Lists tracked network connections for machines that are forwarding IP connections.
+- **ip_tables_names** - Lists the types of iptables in use.
+  This file is only present if iptables is active on the system and contains one or more of the following values: filter, mangle, or nat.
+- **ip_mr_cache** - Lists the multicast routing cache.
+- **ip_mr_vif** - Lists multicast virtual interfaces.
+- **netstat** - Contains a broad yet detailed collection of networking statistics, including TCP timeouts, SYN cookies sent and received, and much more.
+- **psched** - Lists global packet scheduler parameters.
+- **raw** - Lists raw device statistics.
+- **route** - Lists the kernel's routing table.
+- **rt_cache** - Contains the current routing cache.
+- **snmp** - List of Simple Network Management Protocol (SNMP) data for various networking protocols in use.
+- **sockstat** - Provides socket statistics.
+- **tcp** - Contains detailed TCP socket information.
+- **tr_rif** - Lists the token ring RIF routing table.
+- **udp** - Contains detailed UDP socket information.
+- **unix** - Lists UNIX domain sockets currently in use.
+- **wireless** - Lists wireless interface data.
 
 ### Linux Network Config Files
   ```
