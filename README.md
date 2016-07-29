@@ -600,6 +600,66 @@ If the specific driver wrapper is not known beforehand, it is possible to specif
 
 #### `/proc/net/...`
 
+ ```
+ $ ls -l /proc/net/
+ total 0
+ -r--r--r-- 1 root root 0  7月 29 13:34 anycast6
+ -r--r--r-- 1 root root 0  7月 29 13:34 arp
+ -r--r--r-- 1 root root 0  7月 29 13:34 bnep
+ -r--r--r-- 1 root root 0  7月 29 13:34 connector
+ -r--r--r-- 1 root root 0  7月 29 13:34 dev
+ -r--r--r-- 1 root root 0  7月 29 13:34 dev_mcast
+ dr-xr-xr-x 2 root root 0  7月 29 13:34 dev_snmp6
+ -r--r--r-- 1 root root 0  7月 29 13:34 fib_trie
+ -r--r--r-- 1 root root 0  7月 29 13:34 fib_triestat
+ -r--r--r-- 1 root root 0  7月 29 13:34 hci
+ -r--r--r-- 1 root root 0  7月 29 13:34 icmp
+ -r--r--r-- 1 root root 0  7月 29 13:34 icmp6
+ -r--r--r-- 1 root root 0  7月 29 13:34 if_inet6
+ -r--r--r-- 1 root root 0  7月 29 13:34 igmp
+ -r--r--r-- 1 root root 0  7月 29 13:34 igmp6
+ -r--r--r-- 1 root root 0  7月 29 13:34 ip6_flowlabel
+ -r--r--r-- 1 root root 0  7月 29 13:34 ip6_mr_cache
+ -r--r--r-- 1 root root 0  7月 29 13:34 ip6_mr_vif
+ -r--r--r-- 1 root root 0  7月 29 13:34 ip_mr_cache
+ -r--r--r-- 1 root root 0  7月 29 13:34 ip_mr_vif
+ -r--r--r-- 1 root root 0  7月 29 13:34 ipv6_route
+ -r--r--r-- 1 root root 0  7月 29 13:34 l2cap
+ -r--r--r-- 1 root root 0  7月 29 13:34 mcfilter
+ -r--r--r-- 1 root root 0  7月 29 13:34 mcfilter6
+ dr-xr-xr-x 2 root root 0  7月 29 13:34 netfilter
+ -r--r--r-- 1 root root 0  7月 29 13:34 netlink
+ -r--r--r-- 1 root root 0  7月 29 13:34 netstat
+ -r--r--r-- 1 root root 0  7月 29 13:34 packet
+ -r--r--r-- 1 root root 0  7月 29 13:34 pnp
+ -r--r--r-- 1 root root 0  7月 29 13:34 protocols
+ -r--r--r-- 1 root root 0  7月 29 13:34 psched
+ -r--r--r-- 1 root root 0  7月 29 13:34 ptype
+ -r--r--r-- 1 root root 0  7月 29 13:34 raw
+ -r--r--r-- 1 root root 0  7月 29 13:34 raw6
+ -r--r--r-- 1 root root 0  7月 29 13:34 rfcomm
+ -r--r--r-- 1 root root 0  7月 29 13:34 route
+ -r--r--r-- 1 root root 0  7月 29 13:34 rt6_stats
+ -r--r--r-- 1 root root 0  7月 29 13:34 rt_acct
+ -r--r--r-- 1 root root 0  7月 29 13:34 rt_cache
+ -r--r--r-- 1 root root 0  7月 29 13:34 sco
+ -r--r--r-- 1 root root 0  7月 29 13:34 snmp
+ -r--r--r-- 1 root root 0  7月 29 13:34 snmp6
+ -r--r--r-- 1 root root 0  7月 29 13:34 sockstat
+ -r--r--r-- 1 root root 0  7月 29 13:34 sockstat6
+ -r--r--r-- 1 root root 0  7月 29 13:34 softnet_stat
+ dr-xr-xr-x 2 root root 0  7月 29 13:34 stat
+ -r--r--r-- 1 root root 0  7月 29 13:34 tcp
+ -r--r--r-- 1 root root 0  7月 29 13:34 tcp6
+ -r--r--r-- 1 root root 0  7月 29 13:34 udp
+ -r--r--r-- 1 root root 0  7月 29 13:34 udp6
+ -r--r--r-- 1 root root 0  7月 29 13:34 udplite
+ -r--r--r-- 1 root root 0  7月 29 13:34 udplite6
+ -r--r--r-- 1 root root 0  7月 29 13:34 unix
+ -r--r--r-- 1 root root 0  7月 29 13:34 wireless
+ -r--r--r-- 1 root root 0  7月 29 13:34 xfrm_stat
+ ```
+
 This directory provides a comprehensive look at various networking parameters and statistics.
 Each directory and virtual file within this directory describes aspects of the system's network configuration.
 
@@ -637,7 +697,10 @@ Below is a partial list of the `/proc/net/` directory:
 - **unix** - Lists UNIX domain sockets currently in use.
 - **wireless** - Lists wireless interface data.
 
+> https://www.centos.org/docs/5/html/5.2/Deployment_Guide/s2-proc-dir-net.html
+
 ### Linux Network Config Files
+
   ```
   /etc/network/interfaces
   /etc/networks
