@@ -285,6 +285,8 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 > http://www.digilife.be/quickreferences/QRC/LINUX%20Admin%20Quick%20Reference.pdf
 
+> https://sourceforge.net/projects/net-tools/
+
 ### Network Utilities
 
   ```
@@ -335,6 +337,8 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
   iwpriv - configure optionals (private) parameters of a wireless network interface
   iwspy - Get wireless statistics from specific nodes
 
+  rfkill - tool for enabling and disabling wireless devices
+
   # wireless access point
   wpa_cli - WPA command line client
   wpa_action - wpa_cli action script
@@ -355,6 +359,27 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 > https://en.wikipedia.org/wiki/Wireless_tools_for_Linux
 
 > http://www.linuxjournal.com/content/wi-fi-command-line
+
+### Deprecated Linux networking commands and their replacements
+
+The command line utilities available for configuring and troubleshooting network properties on Windows and Linux, some Linux tools that, while still included and functional in many Linux distributions, are actually considered deprecated and therefore should be phased out in favor of more modern replacements.
+
+Specifically, the deprecated Linux networking commands in question are: `arp`, `ifconfig`, `iptunnel`, `iwconfig`, `nameif`, `netstat`, and `route`.
+These programs (except `iwconfig`) are included in the net-tools package that has been unmaintained for years.
+
+Deprecated command | Replacement command(s)
+-----              | ------
+arp                | ip n (ip neighbor)
+ifconfig           | ip a (ip addr), ip link, ip -s (ip -stats)
+iptunnel           | ip tunnel
+iwconfig           | iw
+nameif             | ip link, ifrename
+netstat            | ss, ip route (for netstat-r), ip -s link (for netstat -i), ip maddr (for netstat-g)
+route              | ip r (ip route)
+
+> https://dougvitale.wordpress.com/2011/12/21/deprecated-linux-networking-commands-and-their-replacements/
+
+> https://dougvitale.wordpress.com/2011/12/11/troubleshooting-faulty-network-connectivity-part-2-essential-network-commands/
 
 ### `iwconfig`, `iwevent`, `iwlist`
 
@@ -391,6 +416,10 @@ Each line displays the specific Wireless Event which describes what has happened
 
 `iwlist` is used to display some additional information from a wireless network interface that is not displayed by `iwconfig`.
 The main argument is used to select a category of information, `iwlist` displays in detailed form all information related to this category, including information already shown by `iwconfig`.
+
+### `iw`
+
+
 
 ### `wpa_supplicant`
 
