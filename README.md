@@ -419,7 +419,16 @@ The main argument is used to select a category of information, `iwlist` displays
 
 ### `iw`
 
+`iw` is a new `nl80211` based CLI configuration utility for wireless devices.
+It supports all new drivers that have been added to the kernel recently.
+The old tool `iwconfing`, which uses Wireless Extensions interface, is deprecated and it's strongly recommended to switch to `iw` and `nl80211`.
 
+Like rest of Linux kernel, `iw` is still under development. Features are added 'as we go'.
+The only documentation for `iw` is this page and output from 'iw help'. 
+
+> https://wireless.wiki.kernel.org/en/users/documentation/iw
+
+> https://wireless.wiki.kernel.org/en/users/documentation/iw/replace-iwconfig
 
 ### `wpa_supplicant`
 
