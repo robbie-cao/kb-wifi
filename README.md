@@ -381,6 +381,37 @@ route              | ip r (ip route)
 
 > https://dougvitale.wordpress.com/2011/12/11/troubleshooting-faulty-network-connectivity-part-2-essential-network-commands/
 
+### `ip`
+
+`ifconfig` will not go away any time soon, but its newer version, `ip`, is more powerful and will eventually replace it.
+
+  ```
+  ip [ OPTIONS ] OBJECT { COMMAND | help }
+
+  ip [ -force ] -batch filename
+
+  OBJECT := { link | addr | addrlabel | route | rule | neigh | ntable | tunnel | tuntap | maddr | mroute | mrule | monitor | xfrm | netns | l2tp | tcp_metrics }
+
+  OPTIONS := { -V[ersion] | -s[tatistics] | -r[esolve] | -f[amily] { inet | inet6 | ipx | dnet | link } | -o[neline] }
+  ```
+
+`ip` is not a drop-in replacement for `ifconfig`. There are differences in the structure of the commands. Even with these differences, both commands are used for similar purposes.
+
+In fact, `ip` can do the following:
+- Discover which interfaces are configured on a system
+- Query the status of a network interface
+- Configure the network interfaces (including local loop-back, and Ethernet)
+- Bring an interface up or down
+- Manage both default and static routing
+- Configure tunnel over IP
+- Configure ARP or NDISC cache entry
+
+> https://www.linux.com/learn/replacing-ifconfig-ip
+
+> http://superuser.com/questions/239706/ip-versus-ifconfig
+
+> https://tty1.net/blog/2010/ifconfig-ip-comparison_en.html
+
 ### `iwconfig`, `iwevent`, `iwlist`
 
   ```
