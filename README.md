@@ -596,6 +596,8 @@ If the specific driver wrapper is not known beforehand, it is possible to specif
   -rw-r--r-- 1 root root 4096  7月 25 18:40 uevent
   ```
 
+Description and explaination of those files under `/sys/class/net/` can be found at https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-class-net.
+
 > https://wiki.archlinux.org/index.php/Network_configuration
 
 #### `/proc/net/...`
