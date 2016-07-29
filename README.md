@@ -689,3 +689,6 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 - [Inside the Atheros WiFi Chipset - Adrian Chadd](https://www.youtube.com/watch?v=WOcYTqoSQ68)
 - http://2010.rmll.info/IMG/pdf/kernel-device-drivers-rmll2010.pdf
 - https://www.scribd.com/doc/152763476/Linux-Wifi-Developer-Guide-1
+- https://wiki.archlinux.org/index.php/Wireless_network_configuration
+- https://wiki.openwrt.org/doc/uci/wireless
+- https://dougvitale.wordpress.com/2011/12/21/deprecated-linux-networking-commands-and-their-replacements/
