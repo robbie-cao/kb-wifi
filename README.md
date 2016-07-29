@@ -356,6 +356,42 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 > http://www.linuxjournal.com/content/wi-fi-command-line
 
+### `iwconfig`, `iwevent`, `iwlist`
+
+  ```
+  iwconfig [interface]
+  iwconfig interface [essid X] [nwid N] [mode M] [freq F]
+                     [channel C][sens S ][ap A ][nick NN ]
+                     [rate R] [rts RT] [frag FT] [txpower T]
+                     [enc E] [key K] [power P] [retry R]
+                     [modu M] [commit]
+  ```
+
+`iwconfig` is similar to `ifconfig`, but is dedicated to the wireless interfaces.
+It is used to set the parameters of the network interface which are specific to the wireless operation (for example : the frequency).
+`iwconfig` may also be used to display those parameters, and the wireless statistics (extracted from `/proc/net/wireless`).
+
+`iwevent` displays Wireless Events received through the RTNetlink socket.
+Each line displays the specific Wireless Event which describes what has happened on the specified wireless interface.
+
+  ```
+  iwlist [interface] scanning
+  iwlist [interface] frequency
+  iwlist [interface] rate
+  iwlist [interface] keys
+  iwlist [interface] power
+  iwlist [interface] txpower
+  iwlist [interface] retry
+  iwlist [interface] event
+  iwlist [interface] auth
+  iwlist [interface] wpakeys
+  iwlist [interface] genie
+  iwlist [interface] modulation
+  ```
+
+`iwlist` is used to display some additional information from a wireless network interface that is not displayed by `iwconfig`.
+The main argument is used to select a category of information, `iwlist` displays in detailed form all information related to this category, including information already shown by `iwconfig`.
+
 ### `wpa_supplicant`
 
   ```
