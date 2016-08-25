@@ -801,15 +801,36 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 
 > https://www.linkedin.com/pulse/wifi-configuration-iot-devices-dan-walkes
 
-**Smart Config**
-
-![Config IoT WiFi thru Smart Config](http://cdn.jxtobo.com/wp-content/uploads/2015/10/4ffce04d92a4d6cb21c1494cdfcd6dc1126.jpg)
-
 **AP Mode**
 
 ![Config IoT WiFi thru AP](http://cdn.jxtobo.com/wp-content/uploads/2015/10/4ffce04d92a4d6cb21c1494cdfcd6dc1128.jpg)
 
 > http://www.jxtobo.com/4572.html
+
+**Smart Config**
+
+![Config IoT WiFi thru Smart Config](http://cdn.jxtobo.com/wp-content/uploads/2015/10/4ffce04d92a4d6cb21c1494cdfcd6dc1126.jpg)
+
+**Air Kiss**
+
+AirKiss是微信硬件平台提供的一种WIFI设备快速入网配置技术，要使用微信客户端的方式配置设备入网，需要设备支持AirKiss技术。
+
+AirKiss主要在如下场景中使用：
+
+- 待接入互联网的设备不具备输入输出能力，如空调、空气净化器、烟雾报警器等。
+- 用户不具备通过设备热点的方式进行配置的能力，如老人、家庭主妇等缺乏相关IT知识的用户人群。
+
+![AirKiss](http://iot.weixin.qq.com/wiki/static/image/7_1-1.png)
+
+> http://iot.weixin.qq.com/wiki/document-7_1.html
+
+> http://iot.weixin.qq.com/wiki/doc/wifi/AirKissDoc.pdf
+
+> http://iot.weixin.qq.com/wiki/airkiss_developer_manual.pdf
+
+> http://wenku.baidu.com/view/0e825981ad02de80d5d8409c
+
+> http://iot.weixin.qq.com/wiki/document-0_4.html
 
 ## Misc
 
