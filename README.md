@@ -194,17 +194,19 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 ### General
 
-![Network Model](images/Network-Stack-Models1.png)
-
-> https://vichargrave.github.io/programming/tcp-ip-network-programming-design-patterns-in-cpp/
-
 ![OSI Reference Model Layers](images/seven-layers-of-OSI-model.png)
 
 > https://community.fs.com/blog/tcpip-vs-osi-whats-the-difference-between-the-two-models.html
 
+<!--
 ![TCP/IP Model vs. OSI Model](images/comparison-of-OSI-and-TCPIP.jpg)
 
 > https://community.fs.com/blog/tcpip-vs-osi-whats-the-difference-between-the-two-models.html
+-->
+
+![Network Model](images/Network-Stack-Models1.png)
+
+> https://vichargrave.github.io/programming/tcp-ip-network-programming-design-patterns-in-cpp/
 
 ### Linux Networking Stack
 
