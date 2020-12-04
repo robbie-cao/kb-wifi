@@ -837,13 +837,19 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 
 **AP Mode**
 
+- Config IoT WiFi thru AP
+
+<!--
 ![Config IoT WiFi thru AP](http://cdn.jxtobo.com/wp-content/uploads/2015/10/4ffce04d92a4d6cb21c1494cdfcd6dc1128.jpg)
 
 > http://www.jxtobo.com/4572.html
+-->
 
 **Smart Config**
 
+<!--
 ![Config IoT WiFi thru Smart Config](http://cdn.jxtobo.com/wp-content/uploads/2015/10/4ffce04d92a4d6cb21c1494cdfcd6dc1126.jpg)
+-->
 
 **Air Kiss**
 
@@ -854,7 +860,9 @@ AirKiss主要在如下场景中使用：
 - 待接入互联网的设备不具备输入输出能力，如空调、空气净化器、烟雾报警器等。
 - 用户不具备通过设备热点的方式进行配置的能力，如老人、家庭主妇等缺乏相关IT知识的用户人群。
 
+<!--
 ![AirKiss](http://iot.weixin.qq.com/wiki/static/image/7_1-1.png)
+-->
 
 > http://iot.weixin.qq.com/wiki/document-7_1.html
 
