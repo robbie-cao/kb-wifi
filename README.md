@@ -813,7 +813,11 @@ networks and symbolic names for these networks.
 
 TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technology, a one-step Wi-Fi setup process that allows multiple in-home devices to connect to Wi-Fi networks quickly and efficiently. Considering applications that typically do not have a display or keyboard to enter Wi-Fi network name and password, SmartConfig technology gives end users the ability to easily connect their CC3000-based devices to an access point. Through a simple SmartConfig technology interface, consumers can use an iOS or Android smartphone/tablet or home PC using just a simple Web browser. Software on this page gives access to the SmartConfig library and application source code in order to create your own application using TI's SmartConfig technology.
 
-![TI CC3000 Smart-Config](http://processors.wiki.ti.com/images/2/22/Cc3000_smart_config.PNG)
+![TI CC3000 Smart-Config](images/cc3000-smartconfig.png)
+
+> https://www.cnblogs.com/NL34/p/3538294.html
+
+> http://processors.wiki.ti.com/images/2/22/Cc3000_smart_config.PNG
 
 > http://processors.wiki.ti.com/index.php/CC3000_Smart_Config
 
