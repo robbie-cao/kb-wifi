@@ -210,15 +210,25 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 ### Linux Networking Stack
 
+<!--
 ![Linux Networking Stack](http://140.120.7.21/LinuxRef/IMG/ANS-figure2.gif)
 
 > http://140.120.7.21/LinuxRef/Network/LinuxNetworkStack.html
+-->
 
-![Networking in Linux Kernel](http://upload.wikimedia.org/wikipedia/commons/5/5b/Linux_kernel_map.png)
+![Networking in Linux Kernel](images/Linux_kernel_map.png)
+
+> http://upload.wikimedia.org/wikipedia/commons/5/5b/Linux_kernel_map.png
 
 > http://blog.erratasec.com/2013/02/custom-stack-it-goes-to-11.html#.V5itaGXXFZ0
 
-![Data Flow of Networking in Linux Kernel](http://image.slidesharecdn.com/linuxnetworkstack-140928020340-phpapp02/95/linux-network-stack-1-1024.jpg?cb=1411869839)
+![Data Flow of Networking in Linux Kernel](images/linux-network-stack-1-1024.jpg)
+
+> http://image.slidesharecdn.com/linuxnetworkstack-140928020340-phpapp02/95/linux-network-stack-1-1024.jpg?cb=1411869839
+
+![Network Data Flow through the Linux Kernel](images/Network_data_flow_through_kernel.png)
+
+> https://openwrt.org/docs/guide-developer/networking/praxis
 
 ### Linux WiFi Architecture
 
