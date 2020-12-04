@@ -269,7 +269,7 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 **Linux Wireless Networking Architecutre Overview**
 
-![Linux WiFi Kernel Stack Path](https://www.linux.com/sites/lcom/files/joomla/images/stories/64686/arch.jpg)
+![Linux WiFi Kernel Stack Path](images/linux-wireless-networking-arch.jpg)
 
 > https://www.linux.com/blog/linux-wireless-networking-short-walk
 
