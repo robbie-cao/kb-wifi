@@ -831,9 +831,11 @@ TI's SimpleLink Wi-Fi CC3000 module comes with TI's unique SmartConfig technolog
 
 ### Configure IoT WiFi
 
+<!--
 ![IoT WiFi Configuration Compare](https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAALYAAAAJDQ2ODJiNGM4LTAwODctNDM3ZC04MmNhLTBmOGQxMTZkN2QyNA.png)
 
 > https://www.linkedin.com/pulse/wifi-configuration-iot-devices-dan-walkes
+-->
 
 **AP Mode**
 
