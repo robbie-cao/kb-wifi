@@ -146,17 +146,21 @@ Mesh interfaces are used to allow multiple devices to communication with each ot
 
 **Wireless Router**
 
-![Network Infrastructure](http://www.crimewatchsecurity.com/image/101183000.jpg)
+![Network Infrastructure](images/wireless-router-network.jpg)
+
+> http://www.crimewatchsecurity.com/image/101183000.jpg
 
 **Wireless Bridge**
 
-![Wireless Bridge](http://cdn.makeuseof.com/wp-content/uploads/2008/11/wireless-bridge-diagram.png?b34c28)
+![Wireless Bridge](images/wireless-bridge-network.jpg)
 
 > http://www.home-network-help.com/wireless-bridge.html
 
 **Wireless Repeater**
 
-![Wireless Repeater](http://www.eusso.com/models/wireless/ugl2454-apa/wireless%20repeater.jpg)
+![Wireless Repeater](images/wireless-repeater.jpg)
+
+> http://www.eusso.com/models/wireless/ugl2454-apa/wireless%20repeater.jpg
 
 ## Standard Devices
 
