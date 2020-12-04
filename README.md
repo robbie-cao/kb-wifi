@@ -232,15 +232,25 @@ Wireless range-extenders or wireless repeaters can extend the range of an existi
 
 ### Linux WiFi Architecture
 
-![Realtek Linux WiFi Architecture](http://3.bp.blogspot.com/-e1LcVZ1CE0s/TxGnBSWMBXI/AAAAAAAAAGU/dalu2rx3OYw/s1600/WiFi+Direct.jpg)
+![Realtek Linux WiFi Architecture](images/WiFi-Direct.jpg)
+
+> http://3.bp.blogspot.com/-e1LcVZ1CE0s/TxGnBSWMBXI/AAAAAAAAAGU/dalu2rx3OYw/s1600/WiFi+Direct.jpg
 
 > http://dishingtech.blogspot.com/2012/01/realtek-wi-fi-direct-programming-guide.html
 
+<!--
 ![TI WL18xx Linux Wireless Architecture](http://processors.wiki.ti.com/images/f/fd/Wlcore.png)
 
 > http://processors.wiki.ti.com/index.php/WL18xx_Linux_Wireless_Architecture
+-->
 
-![Tizen Linux WiFi Architecture](https://wiki.tizen.org/w/images/thumb/1/16/Wlan.png/800px-Wlan.png)
+![TI WL18xx Linux Wireless Architecture](images/ti-wl18xx-wifi-arch.png)
+
+> https://www.ti.com/lit/ug/swru561a/swru561a.pdf?ts=1607093939535
+
+![Tizen Linux WiFi Architecture](images/Tizen-Wlan.png)
+
+> https://wiki.tizen.org/w/images/thumb/1/16/Wlan.png/800px-Wlan.png
 
 > https://wiki.tizen.org/wiki/Porting_Guide/Connectivity
 
