@@ -140,7 +140,9 @@ Mesh interfaces are used to allow multiple devices to communication with each ot
 
 **WLAN**
 
-![WLAN Architecture](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/WI-FI_Range_Diagram.svg/2000px-WI-FI_Range_Diagram.svg.png)
+![WLAN Architecture](images/2000px-WI-FI_Range_Diagram.svg.png)
+
+> https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/WI-FI_Range_Diagram.svg/2000px-WI-FI_Range_Diagram.svg.png
 
 **Wireless Router**
 
